@@ -1,0 +1,91 @@
+:root{
+    --very-light-pink: #C7C7C7;
+    --white: #FFF;
+    --text-input-field: #F7F7F7;
+    --black: #000;
+    --hospital-green: #ACD9B2;
+    --dark: #232830;
+    --sm: .75rem;
+    --md: .9rem;
+    --lg: 1.5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.title{
+    display: none;
+}
+
+.my-orders{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+}
+
+
+.resume{
+    gap: 10rem;
+    display: flex;
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 0.5rem .75rem;
+    border-radius: 10px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .15rem;
+    font-size: var(--md);
+}
+
+.description p{
+    color: var(--dark);
+    font-weight: 600;
+}
+
+.description span{
+    color: var(--very-light-pink);
+    font-size: var(--sm);
+    font-weight: 500;
+}
+
+.price{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--dark);
+    font-weight: 700;
+    font-size: var(--md);
+}
+
+
+
+
+@media (min-width: 700px){
+    .my-orders{
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .title{
+        display: flex;
+        align-items: flex-start;
+        padding: 2rem 0rem;
+        color: var(--dark);
+        font-size: var(--md);
+        text-align: left;
+    }
+
+
+}
