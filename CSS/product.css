@@ -1,0 +1,92 @@
+:root{
+    --very-light-pink: #C7C7C7;
+    --white: #FFF;
+    --text-input-field: #F7F7F7;
+    --black: #000;
+    --hospital-green: #ACD9B2;
+    --dark: #232830;
+    --sm: .8rem;
+    --md: .9rem;
+    --lg: 1.5rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.detail-product{
+    display: flex;
+    flex-direction: column;
+}
+
+.img-product{
+    position: relative;
+    width: 100%;
+}
+
+.img-close{
+    position: absolute;
+    width: 25px;
+    background-color: var(--white);
+    top: 8px;
+    left: 8px;
+    border-radius: 50%;
+    padding: .25rem;
+    display: none;
+    cursor: pointer;
+}
+
+.precio{
+    margin: 2rem 0rem .25rem .5rem;
+    font-size: var(--md);
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.name-product{
+    margin: 0rem 0rem 1rem .5rem;
+    font-size: var(--md);
+    font-weight: 500;
+    color: var(--dark);
+}
+
+.description{
+    margin: 0rem .75rem 4.5rem .5rem;
+    font-size: var(--md);
+    color: var(--very-light-pink);
+    font-weight: 500;
+}
+
+.btn-add{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    gap: .25rem;
+    padding: .25rem 6rem;
+    background-color: var(--hospital-green);
+    border: none;
+    border-radius: 8px;
+    color: var(--white);
+    font-size: var(--md);
+}
+
+@media (min-width: 700px){
+    body{
+       
+    }
+
+    .detail-product{
+        max-width: 360px;
+        position: absolute;
+        right: 0;
+    }
+
+    .img-close{
+        display: unset;
+        position: absolute;
+    }
+
+}
