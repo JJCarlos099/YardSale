@@ -98,6 +98,25 @@ li{
 }
 
 @media (min-width: 700px){
+    .my-order{
+        display: flex;
+        margin: auto;
+    }
+
+    .resume{
+        display: flex;
+        justify-content: space-around;
+        max-width: 50%;
+    }
+
+    .article{
+        max-width: 50%;
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+    }
+
+
     .title{
         width: 85vw;
         display: flex;
