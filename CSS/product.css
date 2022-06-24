@@ -71,12 +71,10 @@
     border-radius: 8px;
     color: var(--white);
     font-size: var(--md);
+    cursor: pointer;
 }
 
 @media (min-width: 700px){
-    body{
-       
-    }
 
     .detail-product{
         max-width: 360px;
